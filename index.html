@@ -11,19 +11,57 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
+
 </head>
-<body>
-    
+<body >
+    <div class="container ">
+        <H1 class="justify-content-center d-flex text-light">CALCOLO PREZZO DEL BIGLIETTO</H1>
+        <div class="row">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>nome e cognome</p>
+                    <input type="text" class="form-control my-class" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="Username" id="nome">
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>km da percorrere</p>
+                    <input type="text" class="form-control my-class" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="chilometri" id="km">
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>fascia di eta</p>
+                    <input type="text" class="form-control my-class" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="anni" id="eta">
+                </div>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary my-btn generatore"  id="">genera</button>
+            </div>
+        </div>
+    </div>
 
-    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
-    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
-    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
-    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
-    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
 
+    <div class="container ">
+        <H1 class="justify-content-center d-flex text-light ">IL TUO BIGLIETTO</H1>
+        <div class="row">
+            <ul class="list-group">
 
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>costo biglietto senza sconto</p>
+                    <p class="badge bg-primary rounded-pill"><span id="prezzoFinale"></span></p>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>costo biglietto con sconto </p>
+                    <p class="badge bg-primary rounded-pill"><span id="prezzoFinale2"></span></p>
+                </li>
 
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>numero biglietto</p>
+                    <p class="badge bg-primary rounded-pill"><span  id="random"></span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <script src="myscript.js"></script>
 </body>

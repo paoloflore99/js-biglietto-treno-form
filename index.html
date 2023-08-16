@@ -1,68 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Document</title>
 
 </head>
-<body >
-    <div class="container ">
-        <H1 class="justify-content-center d-flex text-light">CALCOLO PREZZO DEL BIGLIETTO</H1>
-        <div class="row">
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <p>nome e cognome</p>
-                    <input type="text" class="form-control my-class" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="Username" id="nome">
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <p>km da percorrere</p>
-                    <input type="text" class="form-control my-class" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="chilometri" id="km">
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <p>fascia di eta</p>
-                    <input type="text" class="form-control my-class" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="anni" id="eta">
+
+<body>
+    <div class="nav">
+        <nav class="container">
+            <div class="row d-flex justify-content-between">
+                <ul class="list-inline d-flex justify-content-between bg-secondary-subtle">
+                    <li><a class="text-black" href="#"><strong>Siti del gruppo</strong></a></li>
+                    <li><a class="text-black" href="#"><strong>Chi siamo</strong></a></li>
+                    <li><a class="text-black" href="#"><strong>Trenitalia for Business</strong></a></li>
+                    <li><a class="text-black" href="#"><strong>Cerca il biglietto</strong></a></li>
+                    <li><a class="text-black" href="#"><strong>Assistenza</strong></a></li>
+                    <li><a class="text-black" href="#"><strong><i
+                                    class="fa-solid fa-user"></i>Areariservata</strong></a></li>
+                </ul>
+
+                <div class=" d-flex justify-content-between hover centrato">
+                    <img class="logo-trenitalia" src="./css/logo-trenitalia.svg" alt="">
+                    <a class="text-black" href="#"><strong>FRECCE</strong></a>
+                    <a class="text-black" href="#"><strong>INTERCITY E INTERNAZIONALI</strong></a>
+                    <a class="text-black" href="#"><strong>REGGIONALE</strong></a>
+                    <a class="text-black" href="#"><strong>OFFERTE</strong></a>
+                    <a class="text-black" href="#"><strong>SERVIZI</strong></a>
+                    <a class="text-black" href="#"><strong>CARTAFRECCIA E X-GO</strong></a>
+                    <a class="text-black" href="#"><strong>INFO</strong></a>
+                    <a class="text-danger" href="#"><strong><i
+                                class="fa-regular fa-circle-question"></i>INFOTRAFFICO</strong></a>
+                    <!-- <a class="text-black" href="#"><strong>CIRCOLAZIONE REGOLARE SULLA RETE ALTA VELOCITÀ</strong></a> -->
                 </div>
-                </li>
-            </ul>
-            <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary my-btn generatore"  id="">genera</button>
+            </div>
+        </nav>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./css/1920x580-Intercity-collegamento-Roma-SBenedetto.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./css/1920x580-Me-you-20.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./css/1920x580-Offerta-FrecciaYoung-5-23.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="container barra">
+        <div class="row  ">
+            <div class="d-flex justify-content-between ">
+                <div class="dropdown ">
+                    <a class="btn dropdown-toggle border border-0 text-white" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><strong><i
+                                class="fa-regular fa-circle-question"></i>principaliinformazioni</a></strong>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+                <a href="#"><strong>Andata e ritorno</strong></a>
+                <a href="#"><strong>aquisto rapido</strong></a>
+            </div>
+
+
+            <div class="input-group mb-3 dimensione-input text-white">
+                <span class="input-group-text text-danger  bg-white" id="addon-wrapping"><strong>DA</strong></span>
+                <input type="text" class="form-control" placeholder="chilometri" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="eta" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3 dimensione-input-secondo text-white">
+                <input type="text" class="form-control" placeholder="nome" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="cognome" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+
+
+            <div class="input-group mb-3 dimensione-input-persona text-white">
+                <!-- <input type="text" class="form-control" placeholder="sconto" aria-label="Username" aria-describedby="basic-addon1"> -->
+                <button type="button" class="btn btn-danger">biglietto</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container offerte ">
+        <h4>OFFERTE E SERVIZI</h4>
+        <div class="row">
+            <div class="image-container">
+                <img class="rounded-3" src="./css/325x350-pinguini-tattici-nucleari.webp" alt="">
+            </div>
+            <div class="image-container">
+                <img class="rounded-3" src="./css/325x350-speciale-ar-giornata.webp" alt="">
+            </div>
+            <div class="image-container">
+                <img class="rounded-3" src="./css/325x350-Trasporto-animali-domestici-06-2023HP.webp" alt="">
+            </div>
+            <div class="image-container">
+                <img class="rounded-3" src="./css/325X350-IC-Trip-Sicilia_new.webp" alt="">
+            </div>
+            <div class="image-container">
+                <img class="rounded-3" src="./css/325x350-REGIONALE-DOG-IN-TOUR.webp" alt="">
+            </div>
+            <div class="image-container">
+                <img class="rounded-3" src="./css/325x350-Regionale-Italia-in-Tour-SE-2023-02.webp" alt="">
             </div>
         </div>
     </div>
 
 
-    <div class="container ">
-        <H1 class="justify-content-center d-flex text-light ">IL TUO BIGLIETTO</H1>
-        <div class="row">
-            <ul class="list-group">
-
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <p>costo biglietto senza sconto</p>
-                    <p class="badge bg-primary rounded-pill"><span id="prezzoFinale"></span></p>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <p>costo biglietto con sconto </p>
-                    <p class="badge bg-primary rounded-pill"><span id="prezzoFinale2"></span></p>
-                </li>
-
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <p>numero biglietto</p>
-                    <p class="badge bg-primary rounded-pill"><span  id="random"></span></p>
-                </li>
-            </ul>
+    <div id="carouselExample simboli" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <script src="myscript.js"></script>
+
+    <script src="js/myscript.js"></script>
+    <script src="js/appunti.js"></script>
 </body>
+
 </html>

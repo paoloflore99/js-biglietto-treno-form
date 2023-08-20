@@ -1,0 +1,56 @@
+
+a {
+    text-decoration: none; 
+    color: black;
+}
+
+.logo-trenitalia {
+    width: 200px;
+}
+
+.no-outline:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dimensione-input {
+    width: 600px;
+}
+.dimensione-input-secondo {
+    width: 400px;
+}
+
+.dimensione-input-persona {
+    width: 100px;
+}
+
+
+.barra {
+    margin-top: -200px;
+}
+
+/* .centrato {
+    text-align: center;
+} */
+
+.offerte {
+    margin-top: 150px;
+}
+
+
+
+.image-container {
+    flex: 1;
+    padding: 10px; /* Aggiungi uno spazio tra le immagini, se necessario */
+}
+
+
+.simboli {
+    height: 300px;
+}
+
+
+.ciao {
+    z-index: 999;
+    position: absolute;
+}
